@@ -1,4 +1,4 @@
-# Linear-Regressio
+# Linear Regression Project
 
 This tiny project is made for educational purposes. 
 
