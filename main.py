@@ -15,21 +15,21 @@ import matplotlib.pyplot as plt
 #Create a class
 class linearRegression:
 
-    def insert_data(self, x, y):
+    def insert(self, x, y):
         self.x = x
         self.y = y
 
-    def create_a_function(self):
+    def create(self):
         #   Create a random functon
         #   Random matrix
-        f = np.random.rand(100, 2)
+        f = np.random.rand(10, 2)
         # Extract the 'x' and 'y' columns
-        self.x = f[:, 0] * 1000
-        self.y = f[:, 1] * 1000
+        self.x = f[:, 0] * 100
+        self.y = f[:, 1] * 100
 
         return (self.x, self.y)
 
-    def f_prediction(self):
+    def prediction(self):
         # All the formulas are in the description
         # f(x) = mx + q
         x = self.x
@@ -53,8 +53,8 @@ class linearRegression:
 
         return (self.m, self.q)
 
-    def function_plot(self):
-        px = np.array(range(1000))
+    def show(self):
+        px = np.array(range(1200))
         for n in px:
             py = self.m * px + self.q
         #Show [x, y] points
@@ -62,4 +62,5 @@ class linearRegression:
         #Show the predicted function
         plt.plot(px, py)
         plt.show()
+
 
